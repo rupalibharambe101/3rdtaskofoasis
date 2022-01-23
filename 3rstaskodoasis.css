@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.background{
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    border-bottom: 50%;
+}
+.shape:first-child{
+    background: rgb(0, 12, 187);
+    left: -60px;
+    top: -80px;
+}
+.shape:last-child{
+    background: rgb(253, 0, 127);
+    right: -60px;
+    bottom: -70px;
+}
+.wrapper{
+    height: 440px;
+    width: 310px;
+    background-color: rgb(96, 99, 99);
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid gray;
+    box-shadow: 0 0 40px black;
+    padding: 50px 35px;
+}
+.wrapper *{
+    font-family: 'poppins' sans-serif;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+}
+#display{
+    display: block;
+    height: 50px;
+    width: 95%;
+    background:grey;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.button{
+    width: 42px;
+    height: 42px;
+    background: grey;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 16px 13px 0 0;
+    cursor: pointer;
+}
+.button:active{
+    border: 1px solid white;
+}
+.clr-btn{
+    background: red;
+
+}
+.m-btn{
+    background: black;
+}
